@@ -4,6 +4,7 @@
 using namespace std;
 int main()
 {
+	//count variable will store the no. of connected components and c will count the no. of vertices in each components
 	int count=0,c;
 	vector <int> conn;
 	vector <int>::iterator it;
