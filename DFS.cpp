@@ -1,6 +1,4 @@
 #include<bits/stdc++.h>
-#include<limits.h>
-#define r(i,n) for(long long int i=0;i<n;i++)
 using namespace std;
 int main()
 {
@@ -23,7 +21,6 @@ int main()
 	stack <int> s;
 	int source;
 	cin>>source;
-	cout<<source<<" ";
 	s.push(source);
 	//visited[source]=1;
 	//DFS Implementation
