@@ -6,6 +6,7 @@ int main()
 {
 	//count variable will store the no. of connected components and c will count the no. of vertices in each components
 	int count=0,c;
+	//vector conn is to count the no. of nodes in each connected components
 	vector <int> conn;
 	vector <int>::iterator it;
 	//No. of vertex and edges in the graph
@@ -16,16 +17,17 @@ int main()
 	for(int i=0;i<e;i++)
 	{
 		cin>>e1>>e2;
-		v[e1].push_back(e2); 
+		v[e1].push_back(e2);
+		// add a comment in the line below if the graph is directed
 		v[e2].push_back(e1);
 	}
 	//visited array marks all the nodes visited with 1
-	int visited[n];
+	int visited[n+1];
 	//initializing all the nodes with 0 since they are univisited
-	r(i,n)
+	r(i,n+1)
 		visited[i]=0;
 	//DFS for all vertices
-	for(int i=0;i<n;i++)
+	for(int i=1;i<=n;i++)
 	{
 		c=0;
 		if(visited[i]==0)
