@@ -55,7 +55,7 @@ int main()
 			conn.push_back(c);
 		}
 	}
-	cout<<"No. of connected components: "count<<endl;
+	cout<<"No. of connected components: "<<count<<endl;
 	cout<<"No. of Vertices in each connected components: "<<endl;
 	for(it=conn.begin();it!=conn.end();++it)
 		cout<<*it<<endl;
