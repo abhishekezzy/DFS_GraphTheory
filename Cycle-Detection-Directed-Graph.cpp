@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
 	//No. of vertex and edges in the graph
+	
 	int n,e,e1,e2,flag=0;
 	cin>>n>>e;
 	//Using adjacency list to represent graph
@@ -76,4 +77,6 @@ int main()
 	else
 		cout<<"No";
 }
-
+  getch(); 
+	  
+	
